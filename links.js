@@ -7,11 +7,11 @@
 */
 
 const profileLinks = {
-  instagram: "#",
-  linkedin: "#",
+  instagram: "https://www.instagram.com/_yesismail_?igsh=MXdob3NqeHJ6cTFyNw==",
+  linkedin: "https://www.linkedin.com/in/ismail-shah-b179b5420?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   github: "#",
   youtube: "#",
-  email: "mailto:your@email.com"
+  email: "shahismail192004@gmail.com"
 };
 
 const links = [
@@ -29,25 +29,25 @@ const links = [
   },
   {
     title: "GitHub",
-    description: "Check out my repositories",
+    description: "Check out my repositories (currently work is going on)",
     icon: "github",
     url: profileLinks.github
   },
   {
     title: "Portfolio",
-    description: "Explore my projects",
+    description: "Explore my projects (visible in short-time)",
     icon: "code",
     url: "#"
   },
   {
     title: "NextCamp",
-    description: "By students, for students",
+    description: "By students, for students (in development phase)",
     icon: "rocket",
     url: "#"
   },
   {
     title: "YouTube",
-    description: "Watch my content",
+    description: "Watch my content (not sure)",
     icon: "youtube",
     url: profileLinks.youtube
   },
