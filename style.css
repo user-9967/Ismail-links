@@ -612,3 +612,184 @@ body.light .roles { color: #333; }
   .link-arrow { font-size: 25px; }
   .red-horizon { width: 100%; left: -25%; }
 }
+/* =========================================
+   LIGHT THEME
+========================================= */
+
+body.light {
+
+    color: #111;
+
+    background:
+        radial-gradient(
+            circle at 18% 45%,
+            rgba(255, 30, 40, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 45%,
+            rgba(255, 30, 40, 0.08),
+            transparent 35%
+        ),
+        #f4f4f4;
+}
+
+
+/* Background grid */
+
+body.light .grid {
+
+    opacity: 0.08;
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,0,0,.08) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.08) 1px,
+            transparent 1px
+        );
+}
+
+
+/* Main cards */
+
+body.light .link-card {
+
+    color: #111;
+
+    background:
+        rgba(255,255,255,0.78);
+
+    border-color:
+        rgba(0,0,0,0.14);
+
+    border-left-color:
+        #ed111b;
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(0,0,0,0.08),
+
+        -8px 0 30px
+        rgba(255,0,20,0.06);
+}
+
+
+body.light .link-card:hover {
+
+    background:
+        rgba(255,255,255,0.95);
+
+    border-color:
+        rgba(255,20,30,0.5);
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(0,0,0,0.12),
+
+        -10px 0 40px
+        rgba(255,0,20,0.15);
+}
+
+
+/* Card description */
+
+body.light .link-desc {
+
+    color: #666;
+}
+
+
+/* Social buttons */
+
+body.light .social {
+
+    color: #111;
+
+    background:
+        rgba(255,255,255,0.75);
+
+    border-color:
+        rgba(0,0,0,0.15);
+}
+
+
+body.light .social:hover {
+
+    color: #ed111b;
+
+    background:
+        rgba(255,255,255,0.95);
+
+    border-color:
+        rgba(255,20,30,0.6);
+}
+
+
+/* About button */
+
+body.light .about-btn {
+
+    color: #111;
+
+    background:
+        rgba(255,255,255,0.65);
+
+    border-color:
+        #ed111b;
+}
+
+
+/* Theme button */
+
+body.light #themeBtn {
+
+    color: #111;
+
+    background:
+        rgba(255,255,255,0.8);
+
+    border-color:
+        rgba(0,0,0,0.18);
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.08);
+}
+
+
+body.light #themeBtn:hover {
+
+    border-color:
+        #ed111b;
+
+    box-shadow:
+        0 0 20px
+        rgba(255,0,20,0.15);
+}
+
+
+/* Footer */
+
+body.light footer {
+
+    color: #666;
+}
+
+
+/* Horizon */
+
+body.light .red-horizon {
+
+    opacity: .55;
+
+    filter:
+        brightness(.8);
+}
