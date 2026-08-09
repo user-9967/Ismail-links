@@ -797,28 +797,148 @@ body.light .red-horizon {
 
 
 /* =========================================
-   LIGHT THEME BUTTON
+   THEME BUTTON — FINAL
 ========================================= */
 
-body.light #themeBtn {
+button.theme-button,
+#themeBtn {
+    appearance: none !important;
+    -webkit-appearance: none !important;
 
-    color: #111;
+    box-sizing: border-box;
 
-    background: rgba(255,255,255,0.82);
+    width: 122px !important;
+    height: 54px !important;
 
-    border-color: rgba(0,0,0,0.15);
+    padding: 0 20px !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    position: relative;
+
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 16px !important;
+
+    outline: none !important;
+
+    background:
+        rgba(12, 12, 12, 0.72) !important;
+
+    color: #f2f2f2 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+
+    cursor: pointer !important;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 
     box-shadow:
-        0 8px 25px rgba(0,0,0,0.08);
+        inset 0 0 20px rgba(255,255,255,0.02),
+        0 8px 30px rgba(0,0,0,0.45) !important;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease !important;
 }
 
+
+/* Red ambient glow */
+
+button.theme-button::before,
+#themeBtn::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -10px;
+
+    z-index: -1;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 0, 20, 0.12);
+
+    filter: blur(18px);
+
+    opacity: 0.35;
+
+    transition: opacity 0.25s ease;
+}
+
+
+button.theme-button:hover,
+#themeBtn:hover {
+
+    transform: translateY(-2px) !important;
+
+    border-color:
+        rgba(255, 25, 35, 0.7) !important;
+
+    background:
+        rgba(20, 20, 20, 0.9) !important;
+
+    box-shadow:
+        0 0 18px rgba(255, 0, 20, 0.18),
+        0 10px 35px rgba(0,0,0,0.5) !important;
+}
+
+
+button.theme-button:hover::before,
+#themeBtn:hover::before {
+
+    opacity: 0.75;
+}
+
+
+button.theme-button:active,
+#themeBtn:active {
+
+    transform: translateY(0) !important;
+
+}
+
+
+/* =========================================
+   LIGHT THEME
+========================================= */
+
+body.light button.theme-button,
+body.light #themeBtn {
+
+    color: #171717 !important;
+
+    background:
+        rgba(255,255,255,0.82) !important;
+
+    border-color:
+        rgba(0,0,0,0.15) !important;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.10) !important;
+}
+
+
+body.light button.theme-button:hover,
 body.light #themeBtn:hover {
 
-    border-color: rgba(255, 20, 30, 0.65);
+    border-color:
+        rgba(255,20,30,0.7) !important;
 
-    background: rgba(255,255,255,0.98);
+    background:
+        rgba(255,255,255,0.96) !important;
 
     box-shadow:
         0 0 20px rgba(255,0,20,0.15),
-        0 10px 30px rgba(0,0,0,0.10);
+        0 10px 30px rgba(0,0,0,0.12) !important;
 }
