@@ -10,7 +10,7 @@ const icons = {
 
 const socialItems = [
   ["instagram", profileLinks.instagram],
-  ["linkedin", profileLinks.linkedin],
+  ["linkedin", profileLinks.https://www.linkedin.com/in/ismail-shah-b179b5420?utm_source=share_via&utm_content=profile&utm_medium=member_android],
   ["github", profileLinks.github],
   ["youtube", profileLinks.youtube],
   ["mail", profileLinks.email]
