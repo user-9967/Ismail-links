@@ -11,7 +11,7 @@ const profileLinks = {
   linkedin: "https://www.linkedin.com/in/ismail-shah-b179b5420?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   github: "#",
   youtube: "#",
-  email: "shahismail192004@gmail.com"
+  email: "shahismail192004@gmail.com",
 };
 
 const links = [
