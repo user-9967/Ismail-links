@@ -190,22 +190,42 @@ if (year) {
    THEME BUTTON
 ================================ */
 
-const themeBtn =
-    document.getElementById("themeBtn");
-
+const themeBtn = document.getElementById("themeBtn");
 
 if (themeBtn) {
 
-    themeBtn.addEventListener(
-        "click",
-        () => {
+    themeBtn.addEventListener("click", () => {
 
-            document.body
-                .classList
-                .toggle("light");
+        document.body.classList.toggle("light");
 
-        }
-    );
+        const isLight =
+            document.body.classList.contains("light");
+
+        localStorage.setItem(
+            "theme",
+            isLight ? "light" : "dark"
+        );
+
+        themeBtn.innerHTML =
+            isLight ? "Theme ☾" : "Theme ☀";
+
+    });
+
+}
+
+
+/* Load saved theme */
+
+const savedTheme =
+    localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+
+    document.body.classList.add("light");
+
+    if (themeBtn) {
+        themeBtn.innerHTML = "Theme ☾";
+    }
 
 }
 
