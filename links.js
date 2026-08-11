@@ -41,7 +41,7 @@ const links = [
   },
   {
     title: "NextCamp",
-    description: "By students, for students (work is going on)",
+    description: "By students, for students (In development phase)",
     icon: "rocket",
     url: "#"
   },
